@@ -25,8 +25,7 @@
   },
   "scripts": {
     "postinstall": "node bin/postinstall.js",
-    "push": "git add . && git commit -m \"update\" || true && git push",
-    "new-post": "new-post"
+    "push": "git add . && git commit -m \"update\" || true && git push"
   },
   "dependencies": {
     "@inquirer/prompts": "^7.3.2"
