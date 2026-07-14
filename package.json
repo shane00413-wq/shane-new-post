@@ -1,0 +1,21 @@
+{
+  "name": "shane-new-post",
+  "version": "1.2.0",
+  "type": "module",
+  "description": "Create Astro blog posts from CLI",
+  "bin": {
+    "new-post": "bin/new-post.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "postinstall": "node bin/postinstall.js"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.2"
+  }
+}
