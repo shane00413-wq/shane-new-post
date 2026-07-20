@@ -1,0 +1,9 @@
+{
+  "name": "shane-new-post-monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "push": "git add . && git commit -m \"update\" || true && git push"
+  }
+}

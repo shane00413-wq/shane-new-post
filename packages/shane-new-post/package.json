@@ -1,0 +1,38 @@
+{
+  "name": "shane-new-post",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Create Astro blog posts from CLI (English & 中文 in one package)",
+  "packageManager": "pnpm@10.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shane00413-wq/shane-new-post.git",
+    "directory": "packages/shane-new-post"
+  },
+  "homepage": "https://github.com/shane00413-wq/shane-new-post",
+  "bugs": {
+    "url": "https://github.com/shane00413-wq/shane-new-post/issues"
+  },
+  "bin": {
+    "new-post": "bin/new-post.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "i18n",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "postinstall": "node bin/postinstall.js",
+    "push": "git add . && git commit -m \"update\" || true && git push"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.2"
+  },
+  "license": "MIT"
+}
